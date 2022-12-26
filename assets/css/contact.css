@@ -1,0 +1,248 @@
+:root {
+    --light_blue: #12938A;
+    --dark_blue: #111E41;
+    --green: #3AAE49;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex-full{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0px !important;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* top navbar  */
+header .top_navbar{
+    padding: 15px 0px;
+    background: rgb(243, 243, 243);
+    font-size: 15px;
+}
+header .top_navbar .left_box .p_i{
+    margin-right: 35px;
+}
+header .top_navbar .left_box i{
+    color: var(--green);
+    margin-right: 8px;
+}
+header .top_navbar .left_box p{
+    color: var(--dark_blue);
+}
+header .top_navbar .right_box i{
+    font-size: 18px;
+    margin-right: 15px;
+    color: var(--dark_blue);
+}
+
+
+@media screen and (max-width: 992px) {
+    header .top_navbar .left_box .p_i p{
+        display: none;
+    }
+    header .top_navbar .left_box .p_i{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    header .top_navbar{
+        display: none;
+    }
+}
+
+
+header .navbar{
+    padding: 18px 0px;
+    font-size: 16px;
+}
+header .navbar .nav-item .nav-link{
+    color: var(--dark_blue);
+    margin-right: 10px;
+}
+header .navbar .nav-item .nav-link.active{
+    color: var(--green);
+}
+header .navbar .menu_icon{
+    width: 32px;
+    display: none;
+}
+
+
+
+
+
+
+
+header .offcanvas{
+    width: 80%;
+}
+header .offcanvas .offcanvas-body{
+    margin-top: 0px;
+    padding: 30px;
+}
+header .offcanvas .offcanvas-header{
+    padding: 30px;
+}
+header .offcanvas .offcanvas-body ul{
+    padding: 5px;
+}
+header .offcanvas .offcanvas-body ul li a{
+    color: black;
+    font-size: 18px !important;
+}   
+header .offcanvas .offcanvas-body ul li a.active{
+    color: var(--green);
+}
+header .offcanvas .offcanvas-body ul li{
+    margin-bottom: 15px;
+}
+header .offcanvas .offcanvas-body .icon_offcanvas{
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+header .offcanvas .offcanvas-body .icon_offcanvas i{
+    margin-right: 20px;
+    font-size: 25px;
+    color: var(--green);
+}
+
+
+
+.contact__bg{
+    min-height: 230px;
+    background: rgb(239, 239, 239);
+    position: relative;
+}
+.contact__bg h2{
+    font-size: 37px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark_blue);
+}
+.contact__bg span{
+    font-size: 15px;
+}
+
+
+
+.contact__form{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.contact__form .arrow{
+    position: absolute;
+    right: 8%;
+    bottom: 0%;
+    transform: rotate(270deg);
+    opacity: 0.6;
+}
+.contact__form .dots{
+    width: 200px;
+    position: absolute;
+    top: 13%;
+    left: 3%;
+    opacity: 0.6;
+}
+.contact__form .form_img{
+    position: absolute;
+    right: 5%;
+    top: 60px;
+}
+.contact__form .head__sm{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 18px;
+}
+.contact__form .head__lg{
+    font-size: 36px;
+    color: var(--dark_blue);
+}
+.contact__form .dtls{
+    margin-top: 5px !important;
+}
+.contact__form .dtls_box{
+    width: 100%;
+    padding: 35px 20px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22px;
+}
+.contact__form .dtls_box i{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 15px;
+    color: var(--green);
+    background: #efefef;
+    border-radius: 50%;
+}
+.contact__form .dtls_box h5{
+    font-size: 25px;
+    color: var(--dark_blue);
+}
+.contact__form .form_section{
+    padding: 10px 25px;
+}
+.contact__form .form_section .in_put{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 0.5px solid rgb(193, 193, 193);
+    outline: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.contact__form .form_section .in_put.text_area{
+    height: 180px;
+}
+.contact__form .form_section .button{
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    background: var(--green);
+    margin-top: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .contact__form .dots{
+        display: none;
+    }
+    .contact__form .form_section{
+        padding: 0px;
+    }
+    .contact__form .arrow{
+        bottom: -6%;
+    }
+    .contact__form .form_img{
+        top: -60px;
+    }
+    .contact__form .head__lg{
+        font-size: 28px;
+    }
+    header .navbar .menu_icon{
+        display: block;
+    }
+}
