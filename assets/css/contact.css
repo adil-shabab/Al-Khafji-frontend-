@@ -422,6 +422,7 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 .cta__section .curved{
     position: absolute;
     right: 6%;
+    animation: dotsanimate infinite 4s;
     bottom: 9%;
 }
 .cta__section h3{
@@ -448,4 +449,35 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     75%{
         transform: translateY(10px);
     }
+}
+
+
+
+
+
+
+
+
+.counter__section{
+    background: rgb(17,30,65);
+background: linear-gradient(90deg, rgba(17,30,65,0.45451684091605393) 0%, rgba(17,30,65,0.5805672610841212) 41%);
+    color: white;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 200px;
+    border-radius: 25px;
+}
+.counter__section .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counter__section h3{
+    font-size: 40px;
+}
+.counter__section p{
+    font-size: 22px;
 }
