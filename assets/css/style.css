@@ -9,3 +9,41 @@
     height: auto;
     width: 60px;
 }
+
+.main-carousel .carousel-inner .carousel-item img{
+    height: 80vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.main-carousel .carousel-inner .carousel-item h5{
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+}
+
+
+.main-carousel .carousel-inner .carousel-caption {
+    position: absolute;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-90%,-50%);
+    right: 60px;
+    bottom: 60px;
+}
+
+@media only screen and  (max-width:999px){
+    .main-carousel .carousel-inner .carousel-item img{
+        height: 500px;
+    }
+}
+
+@media only screen and  (max-width:767px){
+    .main-carousel .carousel-inner .carousel-item img{
+        height: 340px;
+    }
+}
