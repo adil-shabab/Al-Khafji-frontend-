@@ -69,10 +69,12 @@ header .top_navbar .right_box i{
 header .navbar{
     padding: 18px 0px;
     font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 header .navbar .nav-item .nav-link{
     color: var(--dark_blue);
     margin-right: 10px;
+    font-size: 17px;
 }
 header .navbar .nav-item .nav-link.active{
     color: var(--green);
@@ -226,6 +228,16 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     color: white;
 }
 
+.map_section iframe{
+    width: 100%;
+}
+.map_section{
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+
+
 @media screen and (max-width: 992px) {
     .contact__form .dots{
         display: none;
@@ -245,4 +257,72 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     header .navbar .menu_icon{
         display: block;
     }
+}
+
+
+
+
+
+
+
+
+
+
+.about__section{
+    margin-top: 90px;
+    position: relative;
+}
+.about__section .dots{
+    position: absolute;
+    top: 18%;
+    left: 3%;
+}
+.about__section .head__sm{
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 25px !important;
+    font-size: 18px;
+    text-align: center;
+}
+.about__section .head__lg{
+    font-size: 35px;
+    width: 50%;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px !important;
+    line-height: 50px;
+    margin: auto;
+}
+.about__section .about__para{
+    font-size: 21px;
+    color: gray;
+    width: 75%;
+    text-align: center;
+    margin: auto !important;
+    margin-bottom: 80px !important;
+}
+
+
+
+
+
+.mission__section{ 
+    margin-top: 120px !important;
+}
+.mission__section .head__sm{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--green);
+    margin-bottom: 50px !important;
+}
+.mission__section .mission__img{
+    margin-bottom: 30px;
+}
+.mission__section .box h4{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.mission__section .box p{
+    font-size: 18px;
+    color: gray;
 }
