@@ -30,24 +30,24 @@ li{
 
 /* top navbar  */
 header .top_navbar{
-    padding: 15px 0px;
-    background: rgb(243, 243, 243);
+    padding: 8px 0px;
+    background: var(--light_blue);
     font-size: 15px;
 }
 header .top_navbar .left_box .p_i{
     margin-right: 35px;
 }
 header .top_navbar .left_box i{
-    color: var(--green);
+    color: white;
     margin-right: 8px;
 }
 header .top_navbar .left_box p{
-    color: var(--dark_blue);
+    color: white;
 }
 header .top_navbar .right_box i{
     font-size: 18px;
     margin-right: 15px;
-    color: var(--dark_blue);
+    color: white;
 }
 
 
@@ -67,7 +67,7 @@ header .top_navbar .right_box i{
 
 
 header .navbar{
-    padding: 18px 0px;
+    padding: 10px 0px;
     font-size: 16px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
@@ -130,18 +130,21 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 
 
 .contact__bg{
-    min-height: 230px;
-    background: rgb(239, 239, 239);
+    min-height: 300px;
+    background: url('../img/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 .contact__bg h2{
     font-size: 37px;
     margin-bottom: 8px;
     font-weight: 600;
-    color: var(--dark_blue);
+    color: white;
 }
 .contact__bg span{
     font-size: 15px;
+    color: white;
 }
 
 
@@ -308,6 +311,7 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 
 .mission__section{ 
     margin-top: 120px !important;
+    margin-bottom: 80px;
 }
 .mission__section .head__sm{
     font-size: 20px;
@@ -315,14 +319,25 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     color: var(--green);
     margin-bottom: 50px !important;
 }
+.mission__section .box{
+    padding: 13px 13px 25px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    flex-direction: column;
+}
 .mission__section .mission__img{
     margin-bottom: 30px;
+    /* width: 250px; */
+    border-radius: 10px;
 }
 .mission__section .box h4{
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
+    color: var(--light_blue);
 }
 .mission__section .box p{
-    font-size: 18px;
+    font-size: 16px;
     color: gray;
 }
