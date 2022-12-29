@@ -162,11 +162,12 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 }
 
 
-
-.contact__bg{
+.ba__nn__er{
     min-height: 320px;
-    background: rgb(236, 236, 236);
     position: relative;
+}
+.contact__bg{
+    background: rgb(236, 236, 236);
 }
 .about__banner_bg{
     background: url('../img/about-bg.jpg');
@@ -176,14 +177,14 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     min-height: 320px;
     color: white;
 }
-.contact__bg h2{
-    font-size: 37px;
+.ba__nn__er h2{
+    font-size: 40px;
     margin-bottom: 8px;
     font-weight: 600;
     color: white;
 }
-.contact__bg span{
-    font-size: 15px;
+.ba__nn__er span{
+    font-size: 18px;
     color: white;
 }
 
@@ -268,7 +269,11 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     outline: none;
     background: var(--green);
     margin-top: 10px;
+    border: 1px solid var(--green);
     color: white;
+}
+.contact__form .form_section .button:hover{
+    color: var(--green);
 }
 
 .map_section iframe{
@@ -414,7 +419,7 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     bottom: 25%;
 }
 .cta__section .dots{
-    animation: dotsanimate infinite 5s;
+    animation: dotsanimate infinite 3s;
     position: absolute;
     top: 21%;
     left: 5%;
@@ -422,12 +427,12 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 .cta__section .curved{
     position: absolute;
     right: 6%;
-    animation: dotsanimate infinite 4s;
+    animation: dotsanimate infinite 2s;
     bottom: 9%;
 }
 .cta__section h3{
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 .cta__section p{
@@ -460,7 +465,7 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 
 .counter__section{
     background: rgb(17,30,65);
-background: linear-gradient(90deg, rgba(17,30,65,0.45451684091605393) 0%, rgba(17,30,65,0.5805672610841212) 41%);
+    background: linear-gradient(90deg, rgba(17,30,65,0.45451684091605393) 0%, rgba(17,30,65,0.5805672610841212) 41%);
     color: white;
     padding: 50px 0px;
     display: flex;
@@ -480,4 +485,49 @@ background: linear-gradient(90deg, rgba(17,30,65,0.45451684091605393) 0%, rgba(1
 }
 .counter__section p{
     font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* product page     */
+.product__banner_bg{
+    background: url('https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?w=996&t=st=1672321702~exp=1672322302~hmac=96c5a30c489b258dce9ecdeb06489c6253d99fb03f2e2569f8fdd1c5c52fbb55');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.products__container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.products__container .box{
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    align-items: center;
+    flex-direction: column;
+    border: 0.5px solid #60ba48;
+}
+.products__container .box h5{
+    background: #60ba48;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+}
+.products__container .box img{
+    width: 300px;
+    object-fit: cover;
+    height: 250px;
 }
