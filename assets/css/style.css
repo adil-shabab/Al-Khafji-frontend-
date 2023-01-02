@@ -1,8 +1,25 @@
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
+:root {
+    --light_blue: #5bc7c9;
+    --dark_blue: #111E41;
+    --green: #60ba48;
+}
 
+.green{
+    color: var(--green);
+}
 
-
+.blue{
+    color: var(--dark_blue);
+}
 
 
 .navbar-logo img{
@@ -47,3 +64,173 @@
         height: 340px;
     }
 }
+
+
+
+/* about section */
+
+.main-head{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+
+
+.about--section{
+    padding: 100px 10px;
+
+}
+
+.about--inner{
+    padding: 50px 30px;
+    border-radius: 30px;
+
+}
+
+.about-btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.call-sm-box{
+    padding: 10px 25px;
+    background-color: var(--green);
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.call-sm-box:hover{
+    background-color: var(--light_blue);
+    color: white;
+}
+
+
+/* industry we serve */
+
+.industry-we-serve{
+    padding: 50px 10px 100px;
+}
+
+.industry-we-serve-gif{
+    width: 100px !important;
+    height: auto;
+}
+
+.industry-we-serve-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark_blue);
+}
+
+
+.industry-we-surve-slider{
+    margin-top: 40px;
+}
+
+.industry-we-surve-slider .owl-dots{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.industry-we-surve-slider .owl-dots button{
+    width: 10px;
+    height: 10px;
+    background-color: var(--green);
+    margin: 5px;
+    border-radius: 100%;
+}
+
+/* popular-product-section */
+
+.popular-product-section{
+    padding: 100px 10px;
+}
+
+/* best selling products css starts  */
+.best-products{
+    position: relative;
+}
+.best-products .top-right-img{
+    position: absolute;
+    width: 320px;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+.best-products .bottom-left-img{
+    position: absolute;
+    width: 280px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+.best-products h2{
+    font-weight: bolder;
+    position: relative;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.best-products h2::after{
+    content: '';
+    top: 13px;
+    background: url('../img/click.png');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+.best-products .head-txt{
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+}
+.best-products .row{
+    margin-top: 65px;
+}
+.best-products .row .product-box{
+    cursor: pointer;
+}
+.best-products .row .product-box p{
+    margin: 0px;
+    position: relative;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.best-products .row .product-box p::before{
+    content: '';
+    border-bottom: 3px solid #D74039;
+    width: 22%;
+    position: absolute;
+    display: block;
+    transition: 0.6s;
+    bottom: -7px;
+    left: 1px;
+}
+.best-products .row .product-box p::after{
+    content: '';
+    border-bottom: 3px solid #7AAB3A;
+    width: 22%;
+    position: absolute;
+    transition: 0.6s;
+    display: block;
+    bottom: -7px;
+    left: 22%;
+}
+.best-products .row .product-box:hover p::after{
+    width: 35%;
+    left: 35%;
+}
+.best-products .row .product-box:hover p::before{
+    width: 35%;
+}
+/* best selling products css end  */
