@@ -75,17 +75,9 @@ body{
     font-weight: 700;
 }
 
-
-
-.about--section{
-    padding: 100px 10px;
-
-}
-
-.about--inner{
-    padding: 50px 30px;
-    border-radius: 30px;
-
+.about--btns{
+    display: flex;
+    align-items: center;
 }
 
 .about-btn{
@@ -107,6 +99,44 @@ body{
     background-color: var(--light_blue);
     color: white;
 }
+
+
+
+@media only screen and (max-width:999px){
+    .main-head{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+    }
+    .about--btns{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .call-sm-box{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
+
+.about--sm-img{
+    border-radius: 30px;
+}
+.about--section{
+    padding: 100px 10px;
+
+}
+
+.about--inner{
+    padding: 50px 10px;
+    border-radius: 30px;
+
+}
+
+
+
+
+
 
 
 /* industry we serve */
@@ -149,6 +179,8 @@ body{
 
 .popular-product-section{
     padding: 100px 10px;
+    background-image: url(../img/shape-2.png);
+
 }
 
 /* best selling products css starts  */
