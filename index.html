@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Index</title>
+    <title>HOME | AL KHAFJI</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -62,23 +62,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" id="home_nav" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+                <a class="nav-link" id="about_nav" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Project</a>
+                <a class="nav-link" id="product_nav" href="product.html">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Client</a>
+                <a class="nav-link " id="contact_nav" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Contact</a>
-              </li>
+              <button class="button mt-0 py-1 ms-3" style="padding: 10px;">Enquire</button>
             </ul>
           </div>
         </div>
@@ -95,10 +90,10 @@
         <div class="offcanvas-body">
           <ul>
             <li><a class="active" href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Blogs</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="d-flex icon_offcanvas">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -546,6 +541,11 @@
         </div>
     </footer>
 
+
+
+    <script>
+      document.getElementById('home_nav').classList.add('active')
+    </script>
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
