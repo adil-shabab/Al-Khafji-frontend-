@@ -21,7 +21,9 @@ body{
     color: var(--dark_blue);
 }
 
-
+#offcanvasExampleLabel img{
+    width: 80px !important;
+}
 .navbar-logo img{
     height: auto;
     width: 60px;
