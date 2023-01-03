@@ -1,3 +1,39 @@
+
+//testimonial slider
+$('.testimonialCarousel').slick({
+    infinite: true,
+    slidesToShow: 2,
+    margin: 10,
+    slidesToScroll: 1,
+    // autoplay: true,
+    dots: false,
+    arrows: true,
+    responsive: [{
+            breakpoint: 1099,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+    ]
+});
+
+
+
+
 // industry we serve
 $(document).ready(function(){
     $('.industry-we-surve-slider').owlCarousel({
@@ -58,30 +94,3 @@ $(document).ready(function(){
   // testimonial carousel
 
 
-$('.testimonialCarousel').on('initialized.owl.carousel changed.owl.carousel', function(e) {
-    if (!e.namespace)  {
-      return;
-    }
-    var carousel = e.relatedTarget;
-    $('.slider-counter').text(carousel.relative(carousel.current()) + 1);
-  }).owlCarousel({
-    loop:true,
-    autoplay:true,
-    margin:10,
-    responsiveClass:true,
-    navText: ["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:true
-        },
-        1000:{
-            items:1,
-            nav:true,
-        }
-    }
-})

@@ -13,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <!-- fontawesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <!-- style -->
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -308,92 +310,126 @@
   </div>
 
 
+
+
     <!-- testimonial section -->
-    <div class="testimonial-section">
-      <h2 class="main-head">Testimonials</h2>
-      <div class="row mt-md-5 mt-3">
-          <div class="col-lg-4 testimonial-head-section d-flex justify-content-center align-items-center mb-lg-0 mb-4">
-              <h2 class="d-flex align-items-center">What others say <br class="testimonial-head-br"> about us</h2>
+      <div class="testimonialSection">
+      <img src="assets/img/dots-1.png" class="dots" alt="">
+      <div class="container">
+          <div data-aos="fade-down" data-aos-duration="400" style="position: relative;" class="col-12">
+              <h2 class="text-center head-txt">What Our Customers <span>Say!</span></h2>
           </div>
-          <div class="col-lg-8 col-12">
-              <div class="testimonialCarousel owl-carousel">
-                  <div class="testimonial-div">
-                      <div class="row">
-                          <div class="col-lg-4 col-12">
-                              <img class="img-fluid" src="assets/img/testimonial.png" alt="">
-                              <p class="text-center mt-3">Diya Mirsha</p>
+          <div class="testimonialCarousel">
+            
+              <div data-aos="fade-down" data-aos-duration="300" class="testimonialcard">
+                  <div class="top">
+                      <div class="profile">
+                          <div>
+                              <img src="assets/img/testimonial/profile-1.png" alt="" />
                           </div>
-                          <div class="col-lg-8 col-12">
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div>
-                                      <img class="rating" src="assets/img/rating.png" alt="">
-                                  </div>
-                                  <div>
-                                      <img src="assets/img/google.png" alt="">
-                                  </div>
-                              </div>
-                              <p class="para">“ I thank your company for offering citizenship services to Saint Kitts
-                                  and Nevis. My life planning has
-                                  changed andmy children have moved to continue their studies in Europe. I traveled to
-                                  several European countries with
-                                  families and we did not find any obstacles, but all the welcome and respect .
-                                  I cannot express my gratitude and thanks to all of you “</p>
+                          <div class="d-flex flex-column ms-3">
+                            <p>Manuel</p>
+                            <div class="starRating">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
                           </div>
                       </div>
                   </div>
-                  <div class="testimonial-div">
-                      <div class="row">
-                          <div class="col-lg-4 col-12">
-                              <img class="img-fluid" src="assets/img/testimonial.png" alt="">
-                              <p class="text-center mt-3">Diya Mirsha</p>
-                          </div>
-                          <div class="col-lg-8 col-12">
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div>
-                                      <img class="rating" src="assets/img/rating.png" alt="">
-                                  </div>
-                                  <div>
-                                      <img src="assets/img/google.png" alt="">
-                                  </div>
-                              </div>
-                              <p class="para">“ I thank your company for offering citizenship services to Saint Kitts
-                                  and Nevis. My life planning has
-                                  changed andmy children have moved to continue their studies in Europe. I traveled to
-                                  several European countries with
-                                  families and we did not find any obstacles, but all the welcome and respect .
-                                  I cannot express my gratitude and thanks to all of you “</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="testimonial-div">
-                      <div class="row">
-                          <div class="col-lg-4 col-12">
-                              <img class="img-fluid" src="assets/img/testimonial.png" alt="">
-                              <p class="text-center mt-3">Diya Mirsha</p>
-                          </div>
-                          <div class="col-lg-8 col-12">
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div>
-                                      <img class="rating" src="assets/img/rating.png" alt="">
-                                  </div>
-                                  <div>
-                                      <img src="assets/img/google.png" alt="">
-                                  </div>
-                              </div>
-                              <p class="para">“ I thank your company for offering citizenship services to Saint Kitts
-                                  and Nevis. My life planning has
-                                  changed andmy children have moved to continue their studies in Europe. I traveled to
-                                  several European countries with
-                                  families and we did not find any obstacles, but all the welcome and respect .
-                                  I cannot express my gratitude and thanks to all of you “</p>
-                          </div>
-                      </div>
+                  <p class="testimonialHead text-center">It was a very good experience</p>
+                  <div class="review">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
                   </div>
               </div>
-              <div class="slider-counter"></div>
+              <div data-aos="fade-down" data-aos-duration="400" class="testimonialcard">
+                  <div class="top">
+                      <div class="profile">
+                          <div>
+                              <img  src="assets/img/testimonial/profile-2.png" alt="" />
+                          </div>
+                          <div class="d-flex flex-column ms-3">
+                            <p>Manuel</p>
+                            <div class="starRating">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="testimonialHead text-center">It was a very good experience</p>
+                  <div class="review">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
+                  </div>
+              </div>
+              <div data-aos="fade-down" data-aos-duration="600" class="testimonialcard">
+                  <div class="top">
+                      <div class="profile">
+                          <div>
+                              <img src="assets/img/testimonial/profile-3.png" alt="" />
+                          </div>
+                          <div class="d-flex flex-column ms-3">
+                            <p>Manuel</p>
+                            <div class="starRating">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="testimonialHead text-center">It was a very good experience</p>
+                  <div class="review">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
+                  </div>
+              </div>
+              <div data-aos="fade-down" data-aos-duration="700" class="testimonialcard">
+                  <div class="top">
+                      <div class="profile">
+                          <div>
+                              <img src="assets/img/testimonial/profile-1.png" alt="" />
+                          </div>
+                          <div class="d-flex flex-column ms-3">
+                            <p>Manuel</p>
+                            <div class="starRating">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="testimonialHead text-center">It was a very good experience</p>
+                  <div class="review">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
+                  </div>
+              </div>              
           </div>
       </div>
-  </div>
+    </div> 
+
+
+
+
+
+
 
 
 
@@ -520,6 +556,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
     <!-- owl carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 
