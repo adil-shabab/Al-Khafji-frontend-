@@ -168,6 +168,7 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 }
 .contact__bg{
     background: rgb(236, 236, 236);
+    min-height: 250px;
 }
 .about__banner_bg{
     background: url('../img/about-bg.jpg');
@@ -397,7 +398,6 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 
 .cta__section{
     margin-top: 80px;
-    margin-bottom: 50px;
     height: 410px;
     width: 100%;
     display: flex;
@@ -530,4 +530,26 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
     width: 300px;
     object-fit: cover;
     height: 250px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .about__section .about__para{
+        font-size: 15px;
+        width: 100%;
+    }
+    .about__section .head__lg{
+        font-size: 24px;
+        line-height: 35px;
+        width: 100%;
+    }
+    .cta__section .curved{
+        display: none;
+    }
+    .cta__section .star{
+        display: none;
+    }
+    .cta__section p{
+        font-size: 16px;
+    }
 }
