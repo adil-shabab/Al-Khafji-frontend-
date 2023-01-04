@@ -626,17 +626,3 @@ footer{
 }
 
 
-@media only screen and (max-width:767px){
-    .about--section{
-        padding: 10px;
-    }
-    .industry-we-serve{
-        padding: 10px 10px 50px;
-    }
-    .popular-product-section{
-        padding: 50px 10px;
-    }
-    .client-section{
-        padding: 10px;
-    }
-}
